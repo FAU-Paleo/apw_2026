@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Material of the Analytical Paleobiology Workshop 2025
+title: Material of the Analytical Paleobiology Workshop 2026
 email: adam.kocsis@fau.de
 description: The workshop is sponsored by the Paleosynthesis project. 
-baseurl: "/apw_2025" # the subpath of your site, e.g. /blog
+baseurl: "/apw_2026" # the subpath of your site, e.g. /blog
 
 # Build settings
 theme: minima
