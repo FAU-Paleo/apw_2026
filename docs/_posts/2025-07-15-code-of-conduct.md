@@ -1,14 +1,14 @@
 ---
 title: "Code of Conduct"
 layout: "page"
-date: 2025-07-15
+date: 2026-07-02
 permalink: "/code_of_conduct/"
 ---
 
-*Analytical Paleobiology Workshop 2025*
+*Analytical Paleobiology Workshop 2026*
 
 
-<div><a href="https://docs.google.com/forms/d/e/1FAIpQLSc_D4jDys_EPiH2hZc3NxuGft4vcp7zavHpINJSx6BqNwtCAQ/viewform?usp=header">
+<div><a href="https://docs.google.com/forms/d/e/1FAIpQLSf1uWQ51HST201Nh-7nRFoRTihMXTHuzXmGUF0eYNN9JNws8A/viewform?usp=dialog">
 <div style="background-color:#d0e0e3;padding:10px;margin-bottom:15px;border-color:#black;border-style:solid">
 
 Please enter your name on this form to indicate that you have read, understood, and agree to abide by the Code of Conduct for the workshop.
