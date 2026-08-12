@@ -1,6 +1,6 @@
 # README
 
-Currently built at [https://fau-paleo.github.io/apw_2025/](https://fau-paleo.github.io/apw_2025/). 
+Currently built at [https://fau-paleo.github.io/apw_2026/](https://fau-paleo.github.io/apw_2026/). 
 
 ## About Jekyll
 
@@ -10,36 +10,33 @@ If you have Jekyll installed on your computer, you can also render and check out
 
 ## Sharing material
 
-All actual files of the webpage are in the `docs` directory. **You are expected to edit the module-specific pages**, which are in the `docs/_posts` directory. These pages have a front matter (before the dashes), don't worry about those - except for the title, which you are welcome to change. Here is a table of what files were supposed to be edited by whom:
+All actual files of the webpage are in the `docs` directory. **You are expected to edit the module-specific pages**, which are in the `docs/_posts` directory. These pages have a front matter (before the dashes), don't worry about those (I will update the dates!) - except for the title, which you are welcome to change. Here is a table of what files were supposed to be edited by whom:
 
-| file                         | correspondent(s)  | link                                                                                                         |
-|------------------------------|-------------------|--------------------------------------------------------------------------------------------------------------|
-| 2024-08-01-prepare.md        | Whoever wants to  | [https://fau-paleo.github.io/apw_2025/prepare/](https://fau-paleo.github.io/apw_2025/prepare/)               |
-| 2024-08-18-toolset.md        | Adam              | [https://fau-paleo.github.io/apw_2025/toolset/](https://fau-paleo.github.io/apw_2025/toolset/)               |
-| 2024-08-19-paleodiversity.md | Wolfgang and Adam | [https://fau-paleo.github.io/apw_2025/paleodiversity/](https://fau-paleo.github.io/apw_2025/paleodiversity/) |
-| 2024-08-22-paleogeography.md | Liz and Adam      | [https://fau-paleo.github.io/apw_2025/paleogeography/](https://fau-paleo.github.io/apw_2025/paleogeography/) |
-| 2024-08-25-ssub-niches.md    | Ben (Erin)        | [https://fau-paleo.github.io/apw_2025/ssub-niches/](https://fau-paleo.github.io/apw_2025/ssub-niches/)       |
-| 2024-08-27-phylogenetics.md  | Rachel            | [https://fau-paleo.github.io/apw_2025/phylogenetics/](https://fau-paleo.github.io/apw_2025/phylogenetics/)   |
-| 2024-08-29-morphometrics.md  | Ryan              | [https://fau-paleo.github.io/apw_2025/morphometrics/](https://fau-paleo.github.io/apw_2025/morphometrics/)   |
-| 2024-09-01-div-cmr.md        | Lee Hsiang        | [https://fau-paleo.github.io/apw_2025/cmr/](https://fau-paleo.github.io/apw_2025/cmr/)                       |
-| 2024-09-03-layeranalyzer.md  | Lee Hsiang        | [https://fau-paleo.github.io/apw_2025/timeseries/](https://fau-paleo.github.io/apw_2025/timeseries/)   |
-| 2024-09-04-pyrate.md         | Daniele           | [https://fau-paleo.github.io/apw_2025/pyrate_ai/](https://fau-paleo.github.io/apw_2025/pyrate_ai/)           |
+| file                            | correspondent(s)      | link                                                                                                         |
+|---------------------------------|-----------------------|--------------------------------------------------------------------------------------------------------------|
+| 2026-08-17-toolset.md           | Adam                  | [https://fau-paleo.github.io/apw_2026/toolset/](https://fau-paleo.github.io/apw_2026/toolset/)               |
+| 2026-08-18-paleodiversity.md    | Wolfgang and Adam     | [https://fau-paleo.github.io/apw_2026/paleodiversity/](https://fau-paleo.github.io/apw_2026/paleodiversity/) |
+| 2026-08-30-paleogeography.md    | Adam (Liz)            | [https://fau-paleo.github.io/apw_2026/paleogeography/](https://fau-paleo.github.io/apw_2026/paleogeography/) |
+| 2026-09-03-ssub-niches.md       | Erin (Cooper)         | [https://fau-paleo.github.io/apw_2026/ssub-niches/](https://fau-paleo.github.io/apw_2026/ssub-niches/)       |
+| 2026-08-21-phylogenetics.md     | Rachel                | [https://fau-paleo.github.io/apw_2026/phylogenetics/](https://fau-paleo.github.io/apw_2026/phylogenetics/)   |
+| 2026-08-26-morphometrics.md     | Ryan                  | [https://fau-paleo.github.io/apw_2026/morphometrics/](https://fau-paleo.github.io/apw_2026/morphometrics/)   |
+| 2026-09-02-div-cmr.md           | Lee Hsiang and Isaiah | [https://fau-paleo.github.io/apw_2026/cmr/](https://fau-paleo.github.io/apw_2026/cmr/)                       |
+| 2026-08-31-timeseries-traits.md | Kjetil                | [https://fau-paleo.github.io/apw_2026/timeseries/](https://fau-paleo.github.io/apw_2026/timeseries/)         |
+| 2026-08-24-pyrate.md            | Daniele               | [https://fau-paleo.github.io/apw_2026/pyrate_ai/](https://fau-paleo.github.io/apw_2026/pyrate_ai/)           |
 
 #### Notes
 
-- I copied over the material from the previous year (except Ryan's material, which are from two years ago), assuming that you would like to start with them **but this should not discourage you from updating what is necesssary, and delete things you no longer need.** 
+- I copied over the material from the previous year, assuming that you would like to start with them **but this should not discourage you from updating what is necesssary, and delete things you no longer need.** 
 
-- The exact materials from the previous year are avaiable at this GitHub repo: [GitHub previous year](https://github.com/FAU-Paleo/apw_2024). 
+- The exact materials from the previous year are avaiable at this GitHub repo: [GitHub previous year](https://github.com/FAU-Paleo/apw_2025). 
 
 - For novice git users: to avoid chaos please only edit the page that you are responsible for and use the GitHub interface. If all of this feels overwhelming, don't worry. I (Adam) am happy to put the material on the webpage for you if you need help!
 
-- The data files (and scripts/slides) should be put in the `data` directory, then the format `{{site.baseurl}}/data/<your directory path>/filename.ext` is used to create the link to the file. The `{{site.baseurl}}` bit will become `/apw_2025`. The data files also need to be committed to the git repo. GitHub has a file size limit, if you want to share files that are bigger than 100MB, please use an external hosting service and provide the download links. 
+- The data files (and scripts/slides) should be put in the `data` directory, then the format `{{site.baseurl}}/data/<your directory path>/filename.ext` is used to create the link to the file. The `{{site.baseurl}}` bit will become `/apw_2026`. The data files also need to be committed to the git repo. GitHub has a file size limit, if you want to share files that are bigger than 100MB, please use an external hosting service and provide the download links. 
 
 - If you have sensitive files that you want to share with the students, please use private, external links to these (e.g. dropbox/google drive). Do not add them to the repo because that is relatively difficult to delete. Once the course is over, links to such sensitive files can be invalidated and nobody else will be able to access them.
 
-- The dates of the posts control when they are visible: future posts are not visible, hence the past dates. The years are from last year, but the months and days are the coming ones. I will make the links to the material in the schedule table ([landing page](https://fau-paleo.github.io/apw_2025/)) available on the fly. Even though the links on the index page are not yet live (not to disorient the students), the URLs will be live. It is a good idea therefore to save the URL of the page that you are editing. 
-
-- I will send the 
+- The dates of the posts control when they are visible: future posts are not visible, hence the past dates. The years are from last year, but the months and days are the coming ones. I will make the links to the material in the schedule table ([landing page](https://fau-paleo.github.io/apw_2026/)) available on the fly. Even though the links on the index page are not yet live (not to disorient the students), the URLs will be live. It is a good idea therefore to save the URL of the page that you are editing. 
 
 
 ## Suggested organisation scheme for files
