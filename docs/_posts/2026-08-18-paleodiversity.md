@@ -10,8 +10,8 @@ Welcome to Module 2: Paleodiversity Analyses in R! Across these three days, we'l
 
 | When      | What                           |
 |-----------|--------------------------------|
-| Aug 19    | **Day 2**: Community diversity |
-| Aug 20-21 | **Day 3-4**: Global diversity  |
+| Aug 18    | **Day 2**: Community diversity |
+| Aug 19-20 | **Day 3-4**: Global diversity  |
 |-----------|--------------------------------|
 
 <br>
