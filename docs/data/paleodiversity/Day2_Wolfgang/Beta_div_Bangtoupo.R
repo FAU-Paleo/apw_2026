@@ -2,6 +2,7 @@
 # Script for course
 
 library(vegan)
+library(betapart)
 
 # download from PBDB Middle Triassic community data from Stiller (2001) in South China
 # Bangtoupo, Qingyan, China: Pelsonian - Illyrian, China
@@ -28,7 +29,7 @@ table(dat$collection_no)
 # check for mistakes/typos
 sort(unique(dat$species))
 
-# name doesn't matter, but they need to be the same
+# names don't matter, but they need to be uniform
 dat$species[dat$species=="Triassocirrus moellendorfii"] <- "Triassocirrus moellendorfi"
 dat$species[dat$species=="Pseudomyoconcha maximilianileuchtenbergensis"] <- "Pseudomyoconcha maximilianleuchtenberensis"
 dat$species[dat$species=="Pseudomyoconcha maximilianleuchtenbergensis"] <- "Pseudomyoconcha maximilianleuchtenberensis"
@@ -69,6 +70,32 @@ for(i in 1:nrow(dat)){
     abun.tab[as.character(dat$collection_no[i]),dat$species[i]] <- dat$abund_value[i]
 }
 
+# convert to proportional table
+p.abun <- prop.table(abun.tab, margin=1) 
+rowSums(p.abun) # check
+
+
+dis <- vegdist(p.abun) # bray curtis as default
 X11()
 clus <- hclust(dis, "ward.D2") # recommended method
 plot(clus, hang=-1) 
+
+# R Mode clustering
+r <- vegdist(t(p.abun))
+clus <- hclust(r, "ward.D2") # recommended method
+plot(clus, hang=-1) 
+
+
+mds <- metaMDS(p.abun, k=2)
+plot(mds)
+stressplot(mds)
+
+# R mode and Q mode combined
+library(paleotree)
+twoWayEcologyCluster(dis, r, propAbund=p.abun, clustMethod="ward.D2")
+
+
+
+
+##### Beta diversity ####
+Beta <- ncol(abun.tab)/mean(S)

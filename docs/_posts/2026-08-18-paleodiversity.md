@@ -1,7 +1,7 @@
 ---
 title: "Module 2: Paleodiversity Analyses in R"
 layout: "post" 
-date: 2025-08-19
+date: 2026-08-18
 permalink: "paleodiversity/"
 ---
 
@@ -31,15 +31,14 @@ with Wolfgang Kiessling
 
 
 ### Slideshow
-- [Community diversity]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/CommunityDiversity2025.pptx)
+- [Community diversity]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/CommunityDiversity2026.pptx)
 
 ### R code
-- [`Alpha_div_2025.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Alpha_div_2025.R)
+- [`Alpha_div_2026.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Alpha_div_2026.R)
 - [`Hill_numbers.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Hill_numbers.R)
 - [`Beta_div.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Beta_div.R)
 - [`sqs_Holland.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/sqs_Holland.R)
 - [`Beta_div_Bangtoupo.R`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Beta_div_Bangtoupo.R)
-- [`Beta_div_Bangtoupo_lecturer.R` (lecturer code)]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Beta_div_Bangtoupo_lecturer.R)
 
 ### Datasets
 - [`Radiolarians.csv`]({{site.baseurl}}/data/paleodiversity/Day2_Wolfgang/Radiolarians.csv)
@@ -56,7 +55,7 @@ with Wolfgang Kiessling
 
 
 ### Slideshow
-- [Global diversity]({{site.baseurl}}/data/paleodiversity/Day3_Wolfgang/GlobalDiversity2025.pptx)
+- [Global diversity]({{site.baseurl}}/data/paleodiversity/Day3_Wolfgang/GlobalDiversity2026.pptx)
 
 ### Demo sheet
 - [FooteMetrics.xls]({{site.baseurl}}/data/paleodiversity/Day3_Wolfgang/FooteMetrics.xls)
@@ -80,6 +79,7 @@ with Wolfgang Kiessling
 ## Day 4: Global diversity dynamics using `divDyn`
 with Ádám Kocsis
 
+{%comment%}
 
 # Material
 - [0. Subsampling again (`subsampling.R`)]({{site.baseurl}}/data/paleodiversity/Day4_Adam/subsampling.R) - Script written during lecture: [(`subsampling_adam.R`)]({{site.baseurl}}/data/paleodiversity/Day4_Adam/subsampling_adam.R)
@@ -97,3 +97,4 @@ with Ádám Kocsis
 - Requests for the chronosphere (has to be published data): [Form](https://docs.google.com/forms/d/17C85afiCZfAhD83089yOsBzg8mhJz41frQhjz_tNuuc)
 
 
+{%endcomment%}

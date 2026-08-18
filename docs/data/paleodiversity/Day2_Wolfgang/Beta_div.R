@@ -54,10 +54,10 @@ library(vegan)
     
     ##### Cluster Analysis ####
     # Compute dissimilarity matrix
-    rads <- prop.table(rads, 1) # Only if proportional data are being used, the bray method is equivalent to proportional dissimilary
+    rads <- prop.table(rads, 1) # Only if proportional data are being used, the bray-curtis method is equivalent to proportional dissimilary
     
-    dis <- vegdist(rads) # default is Bray-Curtis
-    r <- vegdist(t(rads))
+    dis <- vegdist(rads) # default is Bray-Curtis # Q-Mode (dissimilarity among samples)
+     r <- vegdist(t(rads)) # R-Mode (dissimilarity among species)
     
     # Do the cluster analysis  
     clus <- hclust(dis, "single")
@@ -65,7 +65,7 @@ library(vegan)
     
     
     X11()
-    clus <- hclust(dis) # recommended method
+    clus <- hclust(dis, "ward.D2") # recommended method
     plot(clus, hang=-1) 
     
     clus2 <- hclust(r, "ward.D2")
@@ -73,7 +73,10 @@ library(vegan)
     
     # R mode and Q mode combined
     library(paleotree)
-    twoWayEcologyCluster(r, dis, propAbund=t(rads), clustMethod="ward.D2")
+    twoWayEcologyCluster(dis, r, propAbund=rads, clustMethod="ward.D2")
+    
+    # heatmap (also combined)
+    heatmap(rads, Rowv=as.dendrogram(clus), Colv=as.dendrogram(clus2))
     
 ####  Ordination ############################
   
@@ -121,10 +124,6 @@ library(vegan)
    # Add a third group (Oman)
    gr[grep("Oman", row.names(rads))] <- 3
    
-   
-   ordihull(mMDS, gr, display="sites", draw="polygon", 
-            col=c("red", "blue", "green"))
-   
    # Convex hull around groups in NMDS
    plot(mMDS, type="n")
    ordihull(mMDS, gr, display="sites", draw="polygon", 
@@ -143,34 +142,4 @@ library(vegan)
       mod <- betadisper(dis, gr) 
       plot(mod, main = "Metric MDS")
       
-   
-#####################
-      #### Cassian Stuff ####
-      cass <- read.csv(paste0(pt,"Cassian.csv"), header=TRUE)
-      table(cass$environment)
-      
-      # Richness by site      
-      table(cass$collection_no)
-      # Shannon-wiener diversity 
-      H <- tapply(cass$abund_value, cass$collection_no, diversity)
-
-      
-            
-      
-      gensp <- paste(cass$occurrence.genus_name, cass$occurrence.species_name)
-      
-      
-      #create sites by species matrix
-      ta.cas <- tapply(cass$abund_value, list(cass$collection_no, factor(gensp)), sum)
-      ta.cas[is.na(ta.cas)] <- 0  
-      
-      # Richness
-      table(cass$collection_no)
-      # Shannon Diversity
-      H <- diversity(ta.cas)
-      
-      #beta diversity
-      prop.sp<-prop.table(ta.cas, margin=1) #proportions
-      sp.beta<-vegdist(prop.sp) #relative bray-curtis
-
-  
+ 

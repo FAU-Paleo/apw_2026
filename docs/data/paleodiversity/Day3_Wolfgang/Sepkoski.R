@@ -16,7 +16,8 @@ setwd("d:/daten/R/Lehre")
   table(sepk$CLASS)
   table(sepk$ORDER)
   length(table(sepk$CLASS))
-
+  length(table(sepk$ORDER))
+  table(sepk$PHYLUM)
   x <- table(factor(sepk$CLASS))
 
   # Create subset
@@ -26,7 +27,8 @@ setwd("d:/daten/R/Lehre")
     # ans <- subset(sepk, MOBILITY==1)  # 0 = sessile, 1 = mobil
    # Taxonomic subset
     # ans <- subset(sepk, CLASS=="Articulata" | CLASS=="Lingulata")
-     #ans <- subset(sepk, CLASS=="Bivalvia")   # Bivalves
+  #   ans <- subset(sepk, PHYLUM=="Brachiopoda")
+    # ans <- subset(sepk, CLASS=="Bivalvia")   # Bivalves
      #ans <- subset(sepk, ORDER=="Hippuritoida")
 
 
@@ -79,31 +81,46 @@ bt <- numeric(vl) # crossing-through
 
 detach(stages)
 
+#### Store intermediate results
+  div.biv <- div
+  bc.biv <- bc
+  ext.biv <- exF
+  
+  div.brach <- div
+  bc.brach <- bc
+  ext.brach <- exF
+  
+  
 ### PLOTS
 
 # Plot diversity curve
   X11(height=6, width=8) # Define window size
 
-  
-    op <- par(xaxs="i", yaxs="i", mfrow=c(1,1)) # 
+  op <- par(xaxs="i", yaxs="i", mfrow=c(1,1)) # 
   
    # Define what to plot
-   x <- age2
-   y <- div
-  # y2 <- brach
-   lg <- "Range-through diversity"
+  #x <- age2[10:76]
+  # y <- ext.biv[10:76]
+  # y2 <- ext.brach[10:76]
+  # lg <- "Extinction rate"
   
+   x <- age2[1:76]
+   y <- exF[1:76]
+   y2 <- orF[1:76]
+   lg <- "Rate"
+   
    # Define borders for legend
      ub <- 0 # Top of rectangle
     # For div and bc
     # bo <- -0.1 # Bottom of rectangle for diversity
     # tb <- 1.4 # Top of graph for diversity
     # For Foote extinction and origination rates
-    #  bo <- -0.08
-    #  tb <- 1.45
+      bo <- -0.08
+      tb <- 1.55
     # For global diversity
-      bo <- -180
-       tb <- max(y)+0.1*max(y)
+  #  bo <- -180
+     #  bo <- -60
+      # tb <- max(y)+0.1*max(y)
     # For percent rates
      # bo <- -0.05
      # tb <- 0.9 
@@ -113,7 +130,8 @@ detach(stages)
    plot(x, y, xlab="Age (Ma)", ylab=lg, pch=16, type="l", 
         col="red", lwd=th, xlim=c(550,0), ylim=c(bo,tb))
    #  points(x, y2, type="l", col="blue", lwd=th) 
-  
+   lines(x, y2, col="darkgreen", lwd=th)
+   
      abline(v=251, lty=2) # Mark Permian-Triassic boundary
      abline(v=65.5, lty=2) # Mark KT boundary
   
@@ -133,8 +151,12 @@ detach(stages)
      # legend("topleft", legend=c("Marine genera"), lwd=2, 
      #        col=c("red", "blue"), bg="white") 
      
+      legend("topright", legend=c("Extinction rate", "Origination rate"), lwd=2, 
+             col=c("red", "darkgreen"), bg="white") 
+     
+     
    # legend("topleft", legend=c("Bivalves", "Brachiopods"), lwd=2, 
-  #         col=c("red", "blue"), bg="white") 
+   #        col=c("red", "blue"), bg="white") 
      
   par(op)
 

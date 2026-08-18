@@ -7,7 +7,7 @@
 
   cor(tf)
 
-  factanal(tf, 4)
+  factanal(tf, 2)
 
   x <- factanal(tf, 3)
   y <- loadings(x)

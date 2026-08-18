@@ -15,7 +15,7 @@ table(temp$collection_no)
 # Bangtoupo F30, Qingyan, China: Pelsonian - Illyrian, China
 
  # Explore only one sample
-  coll <- 31616
+  coll <- 31617
   dat <- subset(temp, collection_no==coll)
 
   cl <- length(levels(factor(dat$class))) # Number of classes
@@ -46,6 +46,7 @@ attach(dat) # to avoid the need of $ signs, important to detach after analyses
       E <- exp(H)/S              ## Equitability
       pD <- max(psp)             ## Berger-Parker Dominanz
       D1 <- sum(p2)               ## Simpson's Dominance
+      SD <- 1-D1
       D2 <- (N*(N-1))/Dn
       PIE <- S/(S-1)*(1-sum(p2)) ## Hurlbert's PIE
  
@@ -54,14 +55,15 @@ attach(dat) # to avoid the need of $ signs, important to detach after analyses
      F <- 1
      while(F <= S) {
            F <- alpha * log(1+N/alpha)
-           alpha <- alpha+0.00001
+           alpha <- alpha+0.0001
             }
+
 
   # Hill number
      # D=(SUM p_i^q)^(1/(1-q))
      q = 0
      q = 0.99999 # Modify here, Do not use q = 1 but rather q = 0.999
-     q = 2 # 
+     q = 99 # 
      
      if (q!=1) D <- sum(psp^q)^(1/(1-q))
      if (q== 1) D <- exp(-sum(psp * log(psp))) 
@@ -71,24 +73,30 @@ attach(dat) # to avoid the need of $ signs, important to detach after analyses
     1/D1 # for q=2
     
           
-    D# Create a loop to compute Hill numbers for q values between 0 and 5
+    # Create a loop to compute Hill numbers for q values between 0 and 5
      D <- numeric()
      q <- numeric()
-     q. <- seq(0, 5, 0.026)
+     q. <- seq(0, 5, 0.01)
      for (i in 1:length(q.)){
        q <- q.[i]
-       D[i] <- sum(psp^q)^(1/(1-q))
+       if (q!=1) D[i] <- sum(psp^q)^(1/(1-q))
+       if (q== 1) D[i] <- exp(-sum(psp * log(psp))) 
+    
      }
      
      plot(q., D, pch=1)
-     exp(H)
+
+  # Use renyi function in vegan package to retrieve diversity estimates
+     renyi(abund_value, scales= c(0, 1, 2), hill=TRUE)
+     
      
      
  ##### Subsampling ####
- # Get one rarefied diversity value for 100 individuals
+     # Empirical rarefaction
+      # Get one rarefied diversity value for 100 individuals
     abu <- rep(identified_name, abund_value)
      
-     trial <- 10000 # subsampling trials
+     trial <- 100 # subsampling trials
      quota <- 100 # subsampling quota
      div <- numeric()
      
@@ -102,15 +110,16 @@ attach(dat) # to avoid the need of $ signs, important to detach after analyses
      
      # Expected number of species according to Good (1953)
      E.Sm <- S - sum((1-psp)^quota) 
+     E.Sm
      
-   # Empirical rarefaction
+   # Empirical rarefaction curve
      # Expected number of species if x individuals are collected
 
-     trial <- 500 # subsampling trials
+     trial <- 200 # subsampling trials
         rardiv <- numeric()
          erdiv <- numeric()
        count <- 1 
-        sq <- seq(1, 211, by=10)
+        sq <- seq(1, 481, by=5)
      for (j in sq)  {    # loop for the quota
 
       div <- numeric(trial)
@@ -126,20 +135,27 @@ attach(dat) # to avoid the need of $ signs, important to detach after analyses
       count <- count+1
   }
 
-        plot(sq, rardiv, type="l")
-        segments(sq, rardiv-erdiv, sq, rardiv+erdiv)
-
+        plot(sq, rardiv, type="l", col="red")
+         #segments(sq, rardiv-erdiv, sq, rardiv+erdiv)
+         lines(sq, rardiv-erdiv, col="grey")
+         lines(sq, rardiv+erdiv, col="grey")
+         
 ### Shareholder quorum subsampling
+      # Good's U (coverage)
+         single <- length(abund_value[abund_value==1]) 
+         u <- 1-single/N
+         
     # We use a simple script of Steve Holland to load the function   
         source("sqs_Holland.R")
       
        sqs0.7 <- sqs(abund_value, quota=0.7)  
-        
+       sqs0.5 <- sqs(abund_value, quota=0.5) 
+       sqs0.3 <- sqs(abund_value, quota=0.3)   
         
 # Summarize results
 resname <- c("PBDB.Collection", "Species", "Individuals", "H", "J", "Simpson's D", "1-D", "PIE", "Berger-Parker", "Fisher's alpha",
    "Margalef", "Menhinick", "Rarefied.200", "SD_Rarefied.200", "SQS0.7")                       
-resu <- c(coll, S, N, H, J, SD, 1-SD, PIE, pD, alpha, marg, menh, rardiv[21], erdiv[21], sqs0.7)
+resu <- c(coll, S, N, H, J, SD, 1-SD, PIE, pD, alpha, marg, menh, rardiv[41], erdiv[41], sqs0.7)
 resround <- round(resu, 3)
 x <- data.frame(cbind(resname, resround))
 
@@ -154,6 +170,7 @@ diversity(abund_value)
 diversity(abund_value, "simpson")
 fisher.alpha(abund_value)
 rarefy(abund_value, seq(5,210,by=5)) # rarefaction
+
 
 plot(sort(abund_value, decreasing=TRUE), log="y")
 
@@ -216,16 +233,18 @@ plot(z, type="b", log="y", xlab="Rank", ylab="Abundance", col="red", lwd=2)
  points(reg2, type="l", col="green")
 
  library(vegan)
- windows()
+ X11()
  fit <- radfit(abund_value)
- plot(fit)
+ plot(fit, main=paste("PBDB collection", coll))
  
 fit
  
 detach(dat)
  
 
-#### Now use vegan package to compute S, H, 
+##### Exercise ####
+# Now use the vegan package to compute S, H, J, and Hill Diversities for q = 1 and 2
+# for the other samples 
 
  
    
