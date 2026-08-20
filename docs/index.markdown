@@ -8,7 +8,7 @@ layout: page
 
 ### Welcome!
 
-Welcome to the website of the Analytical Paleobiology Workshop/School. On this webpage you will find the schedule, links to the study material and the exercises. The summer school is sponsored by the [Paleosynthesis Project](http://www.paleosynthesis.de/).
+Welcome to the website of the Analytical Paleobiology Workshop/School. On this webpage you will find the schedule, links to the study material and the exercises. The summer school is sponsored by the [Paleosynthesis Project](https://www.paleosynthesis.nat.fau.de/).
 
 ### Preparatory material
 
