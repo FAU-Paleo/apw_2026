@@ -79,22 +79,23 @@ with Wolfgang Kiessling
 ## Day 4: Global diversity dynamics using `divDyn`
 with Ádám Kocsis
 
-{%comment%}
+# Previously on...
+
+- GitHub and the corals demo
+- The [`fossils` directory]({{site.baseurl}}/data/paleodiversity/Day4_Adam/fossils.zip)
 
 # Material
-- [0. Subsampling again (`subsampling.R`)]({{site.baseurl}}/data/paleodiversity/Day4_Adam/subsampling.R) - Script written during lecture: [(`subsampling_adam.R`)]({{site.baseurl}}/data/paleodiversity/Day4_Adam/subsampling_adam.R)
-- [1. Diversity dynamics - again!]({{site.baseurl}}/data/paleodiversity/Day4_Adam/2025-08-20_divDyn_basics.pdf)
-- [2. divDyn - Practicals]({{site.baseurl}}/data/paleodiversity/Day4_Adam/divDyn_apw2025.html) - Script written during lecture: [(`divDyn_adam.R`)]({{site.baseurl}}/data/paleodiversity/Day4_Adam/divDyn_adam.R)
+- [1. Diversity dynamics - again!]({{site.baseurl}}/data/paleodiversity/Day4_Adam/2026-08-20_divDyn_basics.pdf)
+- [2. divDyn - Practicals]({{site.baseurl}}/data/paleodiversity/Day4_Adam/divDyn_apw2026.html) 
 - [3. The coral example on Evolv-ED](https://evolv-ed.net//articles/2023-06-16_corals_divdyn-2.html)
 
 
 # Additional
 
 - Scripts: [binningCompare.R]({{site.baseurl}}/data/paleodiversity/Day4_Adam/binningCompare.R)
-- Result: [`pbdb_processed_2025-08-19.rds`](https://www.dropbox.com/scl/fi/w6qec7l7kheb4vntfj649/pbdb_processed_2025-08-19.rds?rlkey=q4gmaqczvsiojctn9nqgjwrm7&st=ww09txjw&dl=1)
+- Result: [`pbdb_processed_2026-08-19.rds`](https://www.dropbox.com/scl/fi/0bdexp2mxwrol84q4aor6/pbdb_processed_2026-08-09.rds?rlkey=f0iqnx9l07s5me4irk3rrfu0o&st=n8klt3wz&dl=1)
 
 # Other
 - Requests for the chronosphere (has to be published data): [Form](https://docs.google.com/forms/d/17C85afiCZfAhD83089yOsBzg8mhJz41frQhjz_tNuuc)
 
 
-{%endcomment%}
