@@ -32,7 +32,7 @@ Welcome to Module 5: Phylogenetics!
 
 ### Morning 
 
-* Intro in Bayesian phylogenetic inference and MCMC
+* [Intro in Bayesian phylogenetic inference and MCMC]({{site.baseurl}}/data/phylogenetics/01-Intro_to_Bayesian.pdf) 
 * Tutorial: [Introduction to BEAST2](https://taming-the-beast.org/tutorials/Introduction-to-BEAST2/)
 
 ### Afternoon
