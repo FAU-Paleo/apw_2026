@@ -37,7 +37,7 @@ Welcome to Module 5: Phylogenetics!
 
 ### Afternoon
 
-* The fossilized birth-death process
+* [The fossilized birth-death process]({{site.baseurl}}/data/phylogenetics/02-FBD.pdf)
 * Tutorial: [Simulating under the FBD model](https://phylogenetics-fau.netlify.app/exercise-04)
 * Tutorial: [FBD exercise in BEAST](https://taming-the-beast.org/tutorials/FBD-tutorial/)
 
