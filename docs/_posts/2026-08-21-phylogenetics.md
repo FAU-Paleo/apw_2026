@@ -48,7 +48,7 @@ Welcome to Module 5: Phylogenetics!
 #### Morning
 
 * [FBD tutorial]({{site.baseurl}}/data/phylogenetics/02b_FBD_tutorial.pdf)
-* [Bayesian inference using RevBayes]({{site.baseurl}}/03-Intro_to_RevBayes.pdf)
+* [Bayesian inference using RevBayes]({{site.baseurl}}/data/phylogenetics/03-Intro_to_RevBayes.pdf)
 * [Setting up RevBayes](https://revbayes.github.io/tutorials/tutorial_structure/)
 * Tutorial: [Intro to the Rev language](https://phylogenetics-fau.netlify.app/exercise-12-rb-intro)
 * Tutorial: [Tree inference using RevBayes](https://phylogenetics-fau.netlify.app/exercise-13-rb-trees)
