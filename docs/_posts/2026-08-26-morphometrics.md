@@ -1,16 +1,16 @@
 ---
-title: "Module 6: Geometric morphometrics"
+title: "Module 5: Geometric morphometrics"
 layout: "post" 
 permalink: "morphometrics/"
 ---
 
-Welcome to Module 8: Geometric Morphometrics! Across these two days, we'll focus on why and how to collect different types of shape data and the challenges of analysing high-dimensional trait data. 
+Welcome to Module 5: Geometric Morphometrics! Across these two days, we'll focus on why and how to collect different types of shape data and the challenges of analysing high-dimensional trait data. 
 
 
 | When   | What                                                                 |
 |--------|----------------------------------------------------------------------|
-| August 29 | Intro and landmark-based GMM                                         |
-| August 30 | Outline-based GMM and beyond                                                  |
+| August 26 | Intro and Outline-based GMM                                       |
+| August 37 | Landmark-based GMM, Morphospace, and Hypothesis testing           |
 
 
 <br>
@@ -22,21 +22,20 @@ Welcome to Module 8: Geometric Morphometrics! Across these two days, we'll focus
 - Learn how to visualize shape change
 
 ### Slideshows
-- [1. Introductions]({{site.baseurl}}/data/morphometrics/powerpoints/1_Who_Am_I.pdf)
-- [2. A Brief History of Morphometrics]({{site.baseurl}}/data/morphometrics/powerpoints/2_A_Brief_History_of_Morphometrics.pdf)
-- [3. Outline Data Analysis]({{site.baseurl}}/data/morphometrics/powerpoints/3_Outline_Analysis.pdf)
-- [4. Advanced Topics in GMM]({{site.baseurl}}/data/morphometrics/powerpoints/4_Advanced_GMM.pdf)
+- [1. A Brief History of Morphometrics]({{site.baseurl}}/data/morphometrics/powerpoints/1_A_Brief_History_of_Morphometrics.pdf)
+- [2. Outline Data Analysis]({{site.baseurl}}/data/morphometrics/powerpoints/2_Outline_Analysis.pdf)
+- [3. Advanced Topics in GMM]({{site.baseurl}}/data/morphometrics/powerpoints/3_Advanced_GMM.pdf)
 
 ### R code
 
-- [0. Setup]({{site.baseurl}}/data/morphometrics/exercises/0_Setup.pdf)
-- [1. Collecting Outline data]({{site.baseurl}}/data/morphometrics/exercises/1_Outline_Data_Collection.pdf)
-- [2. Collecting and Analyzing 2D landmark data]({{site.baseurl}}/data/morphometrics/exercises/2_Collecting_and_Analyzing_Landmark_Data.pdf)
-- [3. Conduct Ellipitcal Fourier Analysis]({{site.baseurl}}/data/morphometrics/exercises/3_Ellipitcal_Fourier.pdf)
-- [3.5. Conduct Ellipitcal Fourier Analysis step2]({{site.baseurl}}/data/morphometrics/exercises/3.5_Ellipitcal_Fourier2.pdf)
-- [4. Analyze EFA Data]({{site.baseurl}}/data/morphometrics/exercises/4_Analyzing_Outline_Data.html)
-- [5. Morphospace: Exploring your data]({{site.baseurl}}/data/morphometrics/exercises/5_Morphospace_plots.html)
-- [6. Practice and Synthesis]({{site.baseurl}}/data/morphometrics/exercises/6_Practicing_with_3D_Landmark_Data.pdf)
+- [1. Setup]({{site.baseurl}}/data/morphometrics/exercises/01_setup_script.html)
+- [2. Collecting Outline data]({{site.baseurl}}/data/morphometrics/exercises/02_Outline_Data_Collection.html)
+- [3. Analyzing Outline data]({{site.baseurl}}/data/morphometrics/exercises/03_Analyzing_Outline_Data.html)
+- [4. Collecting and Manipulating Landmark Data]({{site.baseurl}}/data/morphometrics/exercises/04_collecting_and_manipulating_landmarks.html)
+- [5. Practice and Synthesis]({{site.baseurl}}/data/morphometrics/exercises/05_Practicing_with_3D_Landmark_Data.html)
+- [6. Morphospace: Exploring your data]({{site.baseurl}}/data/morphometrics/exercises/06_Morphospace_plots.html)
+- [7. Hypothesis Testing and Evolutionary Rates]({{site.baseurl}}/data/morphometrics/exercises/07_Shape_evolution.html)
+
 
 ### Data Files
 
