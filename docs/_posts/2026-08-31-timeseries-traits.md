@@ -1,7 +1,7 @@
 ---
 title: "Module 8: Time series"
 layout: "post" 
-date: 2024-09-03
+date: 2026-09-03
 permalink: "timeseries/"
 ---
 
@@ -21,6 +21,9 @@ to ask whether one trait drives the optimum that another is tracking.
 |---------|-------------------------|
 | Aug 31  | **Day 15**: Phenotypic time series (univariate) |
 |---------|-------------------------|
+|---------|-------------------------|
+| Sept 1  | **Day 16**: Phenotypic time series (multivariate) |
+|---------|-------------------------|
 
 <br>
 
@@ -36,28 +39,78 @@ to ask whether one trait drives the optimum that another is tracking.
 - [Background.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Background.pptx)
 - [Nature of time series.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Nature of time series.pptx)
 - [Univariate models.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Univariate models.pptx)
+- [Software.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Software.pptx)
+- [Data.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Data.pptx)
+- [Model adequacy.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Model adequacy.pptx)
 
+## The phenotypic Time Series Database (PETS)
 
-- [ErlangenLiow5_3_Sep-2025.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/ErlangenLiow5_3_Sep-2025.pdf)  
+- [The PETS database](https://pets.nhm.uio.no/PETS/) 
 
+## Tutorials
 
-## R Code
+- [Installing relevant R packages](https://phenotypic-time-series-analysis.github.io/installation/) 
+- [Getting data into the correct format](https://phenotypic-time-series-analysis.github.io/day1/data_import/)
+- [Introduction to univariate models](https://phenotypic-time-series-analysis.github.io/day1/univar/)
+- [Fitting univariate models](https://phenotypic-time-series-analysis.github.io/day1/univar/)
+- [Assessing model adequacy](https://phenotypic-time-series-analysis.github.io/day1/adequacy/)
 
-- [Erlangen Tutorial 4.R]({{site.url}}/{{site.baseurl}}/data/timeseries/Erlangen Tutorial 4.R)
-
-## Data
-
-- [elections-stories-over-time-20210111144254.csv]({{site.url}}/{{site.baseurl}}/data/timeseries/elections-stories-over-time-20210111144254.csv)
-- [Theriot et al 2006 dia.txt]({{site.url}}/{{site.baseurl}}/data/timeseries/Theriot et al 2006 dia.txt)
-- [Theriot et al 2006 ribs.txt]({{site.url}}/{{site.baseurl}}/data/timeseries/Theriot et al 2006 ribs.txt)
-- [Theriot et al 2006 spines.txt]({{site.url}}/{{site.baseurl}}/data/timeseries/Theriot et al 2006 spines.txt)
-- [layerdata.RData]({{site.url}}/{{site.baseurl}}/data/timeseries/layerdata.RData)
+## Exercises
+- [Finding and downloading data from PETS](https://phenotypic-time-series-analysis.github.io/day1/exercise1/) 
+- [Assessing relative and absolute model fit](https://phenotypic-time-series-analysis.github.io/day1/exercise2/)
 
 ## Literature
 
-- [Reitan & Liow 2019 Methods in Ecology and Evolution.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Reitan & Liow 2019 Methods in Ecology and Evolution.pdf)
+- [Hunt_2006.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hunt_2006.pdf)
+- [Hunt_et_al_2008.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hunt_et_al_2008.pdf)
+- [Hunt_2012.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hunt_2012.pdf)
+- [Hunt_et_al_2015.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hunt_et_al_2015.pdf)
+- [Voje_2018.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Voje_2018.pdf)
+- [Voje_2023.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Voje_2023.pdf)
+
+
+## Day 16
+
+<br>
+
+
+## Lecture slides
+
+- [Multivariate models.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Multivariate models.pptx)
+
+## The phenotypic Time Series Database (PETS)
+
+- [The PETS database](https://pets.nhm.uio.no/PETS/) 
+
+## Tutorials
+
+- [Multivariate Random Walk models](https://phenotypic-time-series-analysis.github.io/day2/multivar_URW/) 
+- [Multivariate Ornstein-Uhlenbeck models](https://phenotypic-time-series-analysis.github.io/day2/multivar_OU/)
+
+## Exercises
+
+- [Bivariate analysis](https://phenotypic-time-series-analysis.github.io/day2/exercise3/) 
+- [Trivariate analysis](https://phenotypic-time-series-analysis.github.io/day2/exercise4/)
+
+## Literature
+
+- [Reitan_et_al_2012.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Reitan_et_al_2012.pdf)
+- [Voje_2023.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Voje_2023.pdf)
+- [Hunt_et_al_2026.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hunt_et_al_2026.pdf)
+- [Thaureau_and_Voje_in_press.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Thaureau_and_Voje_in_press.pdf)
+
+## EXTRA: Time series analysis beyond phenotypic evolution
+
+## Lecture slides
+
+- [Layeranalyzer.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Layeranalyzer.pdf)
+
+## Literature
+
+- [Reitan_et_al_2012.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Reitan_et_al_2012.pdf)
 - [Hannisdal and Liow 2018 Palaeontology.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Hannisdal and Liow 2018 Palaeontology.pdf)
-- [Voje 2023.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Voje 2023.pdf)
-- [Yule-SometimesgetNonsenseCorrelations-1926.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Yule-SometimesgetNonsenseCorrelations-1926.pdf)
+- [Reitan_and_Liow_2019.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/Reitan_and_Liow_2019.pdf)
+
+
 
 
