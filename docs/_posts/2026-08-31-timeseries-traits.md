@@ -5,7 +5,7 @@ date: 2024-09-03
 permalink: "timeseries/"
 ---
 
-# Module 8: Time series 
+# Module 7: Time series 
 
 Welcome to Module 8: Analysis of phenotypic time series. Day one covers getting evolutionary sequences into paleoTS format 
 and fitting the full range of univariate models (stasis, random walks, decelerating and accelerating rates, and Ornstein-Uhlenbeck 
