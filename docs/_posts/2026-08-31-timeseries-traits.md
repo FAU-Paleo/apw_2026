@@ -7,27 +7,39 @@ permalink: "timeseries/"
 
 # Module 8: Time series 
 
-Welcome to Module 8: Time series analyses with Layeranalyzer
+Welcome to Module 8: Analysis of phenotypic time series. Day one covers getting evolutionary sequences into paleoTS format 
+and fitting the full range of univariate models (stasis, random walks, decelerating and accelerating rates, and Ornstein-Uhlenbeck 
+processes), comparing them by AICc and reading the uncertainty in the estimates off the log-likelihood surface. Day one also addresses 
+absolute fit, using parametric-bootstrap adequacy tests to ask whether the best-fitting model can actually reproduce the observed 
+trait dynamics. Day two moves to multivariate analysis: estimating evolutionary rate matrices to test whether traits change in a 
+correlated or independent manner, detecting shifts in those rates through time, and using multivariate Ornstein-Uhlenbeck models 
+to ask whether one trait drives the optimum that another is tracking.
 
 
 
 | When    | What                    |
 |---------|-------------------------|
-| Sept 03 | **Day 14**: Time series |
+| Aug 31  | **Day 15**: Phenotypic time series (univariate) |
 |---------|-------------------------|
 
 <br>
 
 <br>
 
-## Day 11 
+## Day 15
 
 <br>
 
 
 ## Lecture slides
 
+- [Background.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Background.pptx)
+- [Nature of time series.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Nature of time series.pptx)
+- [Univariate models.pptx]({{site.url}}/{{site.baseurl}}/data/timeseries/Univariate models.pptx)
+
+
 - [ErlangenLiow5_3_Sep-2025.pdf]({{site.url}}/{{site.baseurl}}/data/timeseries/ErlangenLiow5_3_Sep-2025.pdf)  
+
 
 ## R Code
 
