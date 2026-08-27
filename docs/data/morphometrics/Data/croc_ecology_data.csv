@@ -1,6 +1,6 @@
 Clade2,Clade,Genus,Species,Taxon,Tip_label,Habitat,Diet,Diet2,extinct,time
-Alligatorinae ,Alligatoroidea ,Alligator,mississippiensis,Alligator_mississippiensis,Alligator_mississippiensis,semi-aquatic/freshwater,Carnivore,Carnivore,no,modern
-Alligatorinae ,Alligatoroidea ,Alligator,sinensis,Alligator_sinensis,Alligator_sinensis,semi-aquatic/freshwater,Durophagus?,Carnivore,no,modern
+Alligatorinae,Alligatoroidea ,Alligator,mississippiensis,Alligator_mississippiensis,Alligator_mississippiensis,semi-aquatic/freshwater,Carnivore,Carnivore,no,modern
+Alligatorinae,Alligatoroidea ,Alligator,sinensis,Alligator_sinensis,Alligator_sinensis,semi-aquatic/freshwater,Durophagus?,Carnivore,no,modern
 Notosuchia,Notosuchia,Anatosuchus,minor,Anatosuchus_minor,Anatosuchus_minor,terrestrial,Carnivore,Omnivore/Herbivore,yes,Cretaceous
 Uruguaysuchidae,Notosuchia,Araripesuchus,wegeneri,Araripesuchus_wegeneri,Araripesuchus_wegeneri,terrestrial,Insectivore/omnivore,Omnivore/Herbivore,yes,Cretaceous
 Caimaninae,Alligatoroidea ,Caiman,crocodilus,Caiman_crocodilus,Caiman_crocodilus,semi-aquatic/freshwater,Carnivore,Carnivore,no,modern
@@ -39,6 +39,6 @@ Crocodylia,Crocodylidae,Prodiplocynodon,sp.,Prodiplocynodon_sp.,Prodiplocynodon_
 Caimaninae,Alligatoroidea ,Purussaurus,neivensis,Purussaurus_neivensis,Purussaurus_neivensis,semi-aquatic/freshwater,Carnivore,Carnivore,yes,Cenozoic
 Pholidosauridae,Pholidosauridae,Sarcosuchus,imperator,Sarcosuchus_imperator,Sarcosuchus_imperator,semi-aquatic/freshwater,Carnivore,Carnivore,yes,Cretaceous
 Ziphosuchidae,Notosuchia,Simosuchus,sp.,Simosuchus_sp.,Simosuchus_clarki,terrestrial,Herbivore,Omnivore/Herbivore,yes,Cretaceous
-Globidonta ,Alligatoroidea ,Stangerochampsa,mccabei,Stangerochampsa_mccabei,Stangerochampsa_mccabei,semi-aquatic/freshwater,Durophagus?,Carnivore,yes,Cretaceous
+Globidonta,Alligatoroidea ,Stangerochampsa,mccabei,Stangerochampsa_mccabei,Stangerochampsa_mccabei,semi-aquatic/freshwater,Durophagus?,Carnivore,yes,Cretaceous
 Tomistoma,Tomistoma,Tomistoma,schlegelii,Tomistoma_schlegelii,Tomistoma_schlegelii,semi-aquatic/freshwater,Piscivore,Piscivore,no,modern
 Osteolaeminae,Crocodylidae,Voay,robustus,Voay_robustus,Voay_robustus,semi-aquatic/freshwater,Carnivore,Carnivore,yes,Cenozoic
