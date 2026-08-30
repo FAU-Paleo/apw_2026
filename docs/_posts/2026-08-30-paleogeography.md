@@ -1,13 +1,13 @@
 ---
-title: "Module 3: Paleogeography"
+title: "Module 6: Paleogeography"
 layout: "post" 
-date: 2024-08-22
+date: 2024-08-30
 permalink: "paleogeography/"
 ---
 
-# Module 8: Paleogeography 
+# Module 6: Paleogeography 
 
-Welcome to Module 8: Paleogeography! 
+Welcome to Module 6: Paleogeography! 
 
 
 
@@ -25,12 +25,12 @@ Welcome to Module 8: Paleogeography!
 ## Morning 
 
 
-### Basic GIS in R
+### Basic GIS and handling spatial data in R
 
 - [Intro to GIS Slideshow]({{site.baseurl}}/data/paleogeography/2026-08-30_GIS_basics.pdf)
 - [1. Vector examples]({{site.baseurl}}/data/paleogeography/1_vectors.zip)
 - [2. Raster examples]({{site.baseurl}}/data/paleogeography/2_rasters.zip)
-- [3. Icosahedral gridding]({{site.baseurl}}/data/paleogeography/3_icosa.zip)
+- [3. Icosahedral grids]({{site.baseurl}}/data/paleogeography/3_icosa.zip)
 
 
 ## Afternoon 
