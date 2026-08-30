@@ -1,13 +1,11 @@
 ---
-title: "Module 6: Paleogeography"
+title: "Module 6: GIS and Paleogeography"
 layout: "post" 
 date: 2024-08-30
 permalink: "paleogeography/"
 ---
 
-# Module 6: Paleogeography 
-
-Welcome to Module 6: Paleogeography! 
+# Module 6: GIS and Paleogeography 
 
 
 
