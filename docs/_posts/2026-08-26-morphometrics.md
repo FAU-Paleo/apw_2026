@@ -1,6 +1,7 @@
 ---
 title: "Module 5: Geometric morphometrics"
 layout: "post" 
+date: 2026-08-26
 permalink: "morphometrics/"
 ---
 
@@ -10,7 +11,7 @@ Welcome to Module 5: Geometric Morphometrics! Across these two days, we'll focus
 | When   | What                                                                 |
 |--------|----------------------------------------------------------------------|
 | August 26 | Intro and Outline-based GMM                                       |
-| August 37 | Landmark-based GMM, Morphospace, and Hypothesis testing           |
+| August 27 | Landmark-based GMM, Morphospace, and Hypothesis testing           |
 
 
 <br>

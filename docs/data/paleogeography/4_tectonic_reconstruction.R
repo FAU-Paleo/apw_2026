@@ -1,11 +1,11 @@
 # Basic tectonic reconstructions with rgplates
-# Erlangen, 2025
+# Erlangen, 2026
 # Ádám T. Kocsis
 # CC-BY (attribution)
 # see more examples at : https://gplates.github.io/rgplates/
 #
 # install.packages("rgplates")
-library(rgplates) # 0.6.0
+library(rgplates) # 0.6.1
 
 ##########################################################
 # METHOD I. - The GPlates Web Service
