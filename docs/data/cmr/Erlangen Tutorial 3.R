@@ -3,8 +3,8 @@
 
 #Tutorial 3
 rm(list=ls())
-#read in PBDB from Adam's lectures https://fau-paleo.github.io/apw_2026/paleodiversity/ sorry no time to update!
-pbdb <- readRDS("pbdb_processed_2026-08-09.rds")
+#read in PBDB from Adam's 2024 lectures https://fau-paleo.github.io/apw_2024/paleodiversity/ sorry no time to update!
+pbdb <- readRDS("pbdb_processed_2024-07-11.rds")
 #takes a while to read this don't worry
 
 #subset it
