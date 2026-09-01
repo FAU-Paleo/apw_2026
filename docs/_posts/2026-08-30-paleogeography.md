@@ -45,7 +45,23 @@ permalink: "paleogeography/"
 ## Links 
 
 - [GPlates](https://www.gplates.org/)
+- [GPlates tutorial for undergrades](https://fau-paleo.github.io/se3-gplates/)
+- [Full GPlates tutorials](https://sites.google.com/site/gplatestutorials/)
 - [`rgplates` website](https://gplates.github.io/rgplates/)
 - [`icosa` website](https://icosa-grid.github.io/R-icosa/)
-- [Valdes et al. 2021 Climate Models](https://www.paleo.bristol.ac.uk/ummodel/users/Valdes_et_al_2021/new2/)
+- [Dowding and Kocsis, In Press (preprint)]({{site.baseurl}}/data/paleogeography/DowdingandKocsis_PPE_Prep-Print-1.pdf)
+
+
+## Downloading layers from the the BRIDGE website
+
+This small chunk of text describes how you can download original data from [Valdes et al. 2021](https://www.paleo.bristol.ac.uk/ummodel/users/Valdes_et_al_2021/new2/) results.
+
+- Go to 'Analysis Pages'. Here you can select the group of layers, which forms a comprehensive list, and not everything is really available. As an example, select 'Ocean Single level fields', and click the gray 'Submit' button. The page will refresh.
+- Then you can scroll down and in the blue 'OPTIONS FOR FIRST PLOT' section you can select the climate model run with the 'First Experiement' field (default is `texqe`). Every run has a unique code, and you can frequently see a date next to it. The date refers to the mid of the stage that it describes (what the forcing variables (CO~2~) represent. The dem used in the model is the one that is closest to it (one is made for every 5My). As an example, go and select `texpr2 (086_7_MaBP)`. This will be based on the 85 Ma Paleomap DEM. 
+- Then you can select the variable that you are interested in. If the data are stored with other variables, this will be less relevant, but you do have to check whether you want annual means or monthly data. Not all are available - you will see this when you ask for the results. Let's leave these with`Ocean Top Level Temperature` and `annual mean` for now.
+- Then scroll down and look for the **Format**. This defaults to JavaScript, which will create a plot for you, but what you want is `NETCDF0 file`. This will download the cube in which the data are present. `NETCDF1` will download only the selected variable, which is sometimes available, even when the `NETCDF0` does not give you anything.
+- Then click on **Get Chart** and download the file!
+
+
+
 
