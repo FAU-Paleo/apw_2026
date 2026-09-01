@@ -45,14 +45,14 @@ unique(canidae$genus)[order(unique(canidae$genus))] #good to check names
 genus.list=unique(canidae$genus)[order(unique(canidae$genus))]
 genus.list
 length(genus.list)
-#there are 69 genera in PBDB
+#there are 70 genera in PBDB, that's one more than last year when I taught this class!
 
 #Q(c)how many species are represented?
 temp=canidae$accepted_name[which(canidae$accepted_rank=="species")]
 sp.list=unique(temp)[order(unique(temp))] 
 sp.list#good to check names, does it look alright?
 length(sp.list)
-#there are 252 canidae species with accepted names in pbdb
+#there are 250 canidae species with accepted names in pbdb, yay
 
 #plot the observed temporal ranges of the genera
 data=matrix(data=NA, nrow=length(genus.list), ncol=3) #lets make an empty matrix to put data in
@@ -78,14 +78,14 @@ for (i in 1:length(genus.list)){
 
 #Q(c) What are the mean and median number of observations for canidae genera and species in pbdb?
 #for genera, since we already have that nice table
-median(data[,3]) #17
-mean(data[,3]) #46.34783
+median(data[,3]) #17 
+mean(data[,3]) #45.8
 #and for species 
 
 sp.only=canidae[which(canidae$accepted_rank=="species"),]
 
 median(as.numeric(paste(tapply(sp.only$accepted_name, as.factor(sp.only$accepted_name), length)))) #3
-mean(as.numeric(paste(tapply(sp.only$accepted_name, as.factor(sp.only$accepted_name), length))))  #10.58
+mean(as.numeric(paste(tapply(sp.only$accepted_name, as.factor(sp.only$accepted_name), length))))  #10.7
 
 #Q(c) What are the mean and median number of observations in temporal bins you define for genera and species?
 #ok let's decide on temporal bins first, let's see what the underlying data look like first

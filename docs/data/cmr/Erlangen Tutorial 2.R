@@ -1,5 +1,5 @@
 #Lee Hsiang Liow Tutorial for Erlangen
-#Tutorial 2 revised June 2024
+#Tutorial 2 revised Aug 2025
 
 #This tutorial introduces capture recapture data structure and *one* of the software available
 #namely openCR. I will use openCR to illustrate a few things using an ecological dataset available 
@@ -39,6 +39,12 @@ library(openCR) # load openCR, this requires serc
 
 dipperCH #the data as a single-session secr capthist object
 str(dipperCH) #explore how the data is structured
+#stop and read the data structure and think about how the data might "translate" to paleo data, where each "individual" is a taxon
+#make sure you understand this input object and can image what the equivalent data are. Remember also that statistics and software
+#like R are BLIND to your input numbers. THey do not know your analyses are about fossil and evolution. They just take your
+#numbers and spit out stuff. Some for anyother software you have tried in the workshop or any other software or stats class
+# you have taken.
+
 
 dipperCH[1:dim(dipperCH)[1],,] #the capture history (or encounter/detection history); each row is an individual bird
 #rows will eventually be our individual taxa; and each column is the "time", which in this case is
@@ -52,7 +58,7 @@ attr(x = dipperCH, which = "covariates") #these are discrete covariates associat
 #or if you are looking a vertebrate, this might be herbivore, omnivore and carnivore
 #Q(v) Discuss with your desk partner what types of covariates might be interested in, we can make a class list during discussion
 attr(x = dipperCH, which = "intervals") # ignore this, this is for more complex analyses with primary and secondary sessions 
-#e.g. for robust design analyses see http://www.phidot.org/software/mark/docs/book/pdf/chap15.pdf
+#e.g. for robust design analyses see http://www.phidot.org/software/mark/docs/book/pdf/chap16.pdf
 attr(x = dipperCH, which = "sessionlabels") #so these tell you which calender year the data are collected in
 
 #summaries of the data, 

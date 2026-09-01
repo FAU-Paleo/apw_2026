@@ -1,9 +1,11 @@
-#Lee Hsiang Liow Tutorial for Erlangen
+#Lee Hsiang Liow Tutorial 3 for Erlangen
+#Updated Aug 2025
+
 #Tutorial 3
 rm(list=ls())
-#read in PBDB from Adam's lectures
-#pbdb <- readRDS("/Users/leehl/Desktop/FAU 2024/1pbdb_processed_2024-07-11.rds")
-pbdb <- readRDS("1pbdb_processed_2024-07-11.rds")
+#read in PBDB from Adam's lectures https://fau-paleo.github.io/apw_2026/paleodiversity/ sorry no time to update!
+pbdb <- readRDS("pbdb_processed_2026-08-09.rds")
+#takes a while to read this don't worry
 
 #subset it
 data=subset(pbdb, select=c("phylum", "class", "order", "family", "accepted_rank", "genus", "collection_no", "time_bins", "max_ma", "min_ma"))
@@ -88,7 +90,8 @@ tail(biv)
 
 #make openCR format
 trapXY.1=trapXY[1,] #all traps the same number, trapXY is from Open.CR, just lazy copying 
-#but because we are not using spatial data, it doesn't matter. It's just that these cannot be missing
+#but because we are not using spatial data, it doesn't matter. It's just that these cannot be missing the way
+#funcstuins are set up in openCR
 dummytraps <- read.traps(data = trapXY.1)
 
 #now we will set it up like openCR wants it, it wants Sessions and IDs and trapID's minimally and the Occasion
@@ -204,7 +207,7 @@ arrows(stages$mid, pl, stages$mid, pu, code=3, angle=90, length=0.1,col="blue",)
 #try some other datasets and have fun and ask questions!
 
 
-#these will take a while and will give some warning messages which we can discuss
+#these will take a while and will give some warning messages which we can discuss (e.g. "variance calculation failed for some beta parameters; confounding likely")
 full.Pradelg <- openCR.fit(dnd.matrix, type='Pradelg', model= list(p~t, phi~t, gamma~t)) #=JSSAgCL
 full.Pradel <- openCR.fit(dnd.matrix, type='Pradel', model= list(p~t, phi~t, lambda~t))#== JSSAlCL
 full.JSSAg <- openCR.fit(dnd.matrix, type = 'JSSAg', model = c(phi~t, p~t, gamma~t))
@@ -242,7 +245,7 @@ mod5 <- openCR.fit(dnd.matrix, type = 'Pradelg', model = c(phi~1, p~t.period, ga
 mod6 <- openCR.fit(dnd.matrix, type = 'Pradelg', model = c(phi~faunality, p~faunality, gamma~faunality))
 AIC(mod0,mod1, mod2,mod3, mod4, mod5, mod6)
 
-#looking at mod6 for in stance
+#looking at mod6 for instance
 mod6faun0phi=invlogit(mod6$fit$estimate[1]) # in theory!
 mod6faun1phi=invlogit(mod6$fit$estimate[1]+mod6$fit$estimate[2])  # in theory! but I made it up, so there is no fauanality effect! That's great!
 
